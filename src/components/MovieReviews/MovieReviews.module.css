@@ -1,0 +1,18 @@
+.reviewsList {
+  list-style: none;
+  padding: 0;
+}
+
+.reviewsList li {
+  margin-bottom: 20px;
+}
+
+.reviewsList h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.reviewsList p {
+  font-size: 1rem;
+  line-height: 1.5;
+}

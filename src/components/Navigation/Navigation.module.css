@@ -1,0 +1,28 @@
+.navigationContainer {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.navigationList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: red;
+  font-weight: bold;
+}

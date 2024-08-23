@@ -1,0 +1,69 @@
+.container {
+  padding: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.movieDetails {
+  display: flex;
+  align-items: flex-start;
+}
+
+.poster {
+  max-width: 300px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.info {
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.additionalInfo {
+  margin-top: 30px;
+}
+
+.additionalInfo h3 {
+  margin-bottom: 10px;
+}
+
+.additionalInfo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.additionalInfo li {
+  margin-bottom: 10px;
+}
+
+.additionalInfo a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.additionalInfo a:hover {
+  text-decoration: underline;
+}
