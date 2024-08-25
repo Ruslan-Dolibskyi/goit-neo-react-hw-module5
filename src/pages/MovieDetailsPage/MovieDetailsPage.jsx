@@ -1,12 +1,14 @@
-import { useEffect, useState } from 'react';
-import { useParams, Link, Outlet, useNavigate } from 'react-router-dom';
+import React, { useEffect, useState, useRef } from 'react';
+import { useParams, Link, Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { getMovieDetails } from '../../api/API';
 import styles from './MovieDetailsPage.module.css';
 
 const MovieDetailsPage = () => {
     const { movieId } = useParams();
     const [movie, setMovie] = useState(null);
+    const location = useLocation();
     const navigate = useNavigate();
+    const previousLocation = useRef(location.state?.from || '/movies');
 
     useEffect(() => {
         getMovieDetails(movieId).then(setMovie);
@@ -18,7 +20,7 @@ const MovieDetailsPage = () => {
 
     return (
         <div className={styles.container}>
-            <button onClick={() => navigate(-1)}>Go back</button>
+            <button onClick={() => navigate(previousLocation.current)}>Go back</button>
             <div className={styles.movieDetails}>
                 <img
                     src={`https://image.tmdb.org/t/p/w500${poster_path}`}
